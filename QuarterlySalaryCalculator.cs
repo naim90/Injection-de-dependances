@@ -5,16 +5,14 @@ using System.Threading.Tasks;
 
 namespace WebApplication1
 {
-    public class MonthlySalaryCalculator:ISalaryCalculator
+    public class QuarterlySalaryCalculator:ISalaryCalculator
     {
-
         public Double CalculateSalary(Double yearlyAmount)
 
         {
 
-            return yearlyAmount / 12;
+            return yearlyAmount / 4;
 
         }
-
     }
 }

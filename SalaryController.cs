@@ -2,10 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Injection_de_dependances
+namespace WebApplication1
 {
     [Route("api/[controller]")]
 
@@ -25,17 +24,17 @@ namespace Injection_de_dependances
         }
 
 
-        [HttpGet({"yearlyAmount"}]
+        [HttpGet("yearlyAmount")]
 
         public Double Get(Double yearlyAmount)
 
-    {
+        {
 
-        Double calculatedSalary = _calculator.CalculateSalary(yearlyAmount);
+            Double calculatedSalary = _calculator.CalculateSalary(yearlyAmount);
 
-        return calculatedSalary;
+            return calculatedSalary;
+
+        }
 
     }
-
-}
 }
